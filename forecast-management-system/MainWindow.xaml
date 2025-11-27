@@ -1,0 +1,84 @@
+﻿<Window x:Class="forecast_management_system.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:forecast_management_system"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!-- HEADER -->
+            <Border Grid.Row="0" Grid.ColumnSpan="2" Background="#1E90FF">
+                <TextBlock Text="Brewlytics"
+                       VerticalAlignment="Center"
+                       Margin="20,0,0,0"
+                       Foreground="White"
+                       FontSize="20"
+                       FontWeight="Bold"/>
+            </Border>
+
+            <!-- Sidebar -->
+            <Border Background="#2F3542" Grid.Row="1" Grid.Column="0">
+                <StackPanel>
+                    <Button
+                        Content="Dashboard"
+                        Click="OpenDashboard"
+                        Margin="10"
+                        Padding="10"
+                        Foreground="White"
+                        Background="#57606F"/>
+                    <Button
+                        Content="Input Penjualan"
+                        Click="OpenInputSelling"
+                        Margin="10"
+                        Padding="10"
+                        Foreground="White"
+                        Background="#57606F"/>
+                    <Button
+                        Content="Daftar Transaksi"
+                        Click="OpenTransactionList"
+                        Margin="10"
+                        Padding="10"
+                        Foreground="White"
+                        Background="#57606F"/>
+                    <Button
+                        Content="Kelola Review"
+                        Click="OpenManageReview"
+                        Margin="10"
+                        Padding="10"
+                        Foreground="White"
+                        Background="#57606F"/>
+                    <Button
+                        Content="Laporan Penjualan"
+                        Click="OpenSalesReport"
+                        Margin="10"
+                        Padding="10"
+                        Foreground="White"
+                        Background="#57606F"/>
+                </StackPanel>
+            </Border>
+
+        <!-- ========== FOOTER ========== -->
+        <Border Grid.Row="2" Grid.ColumnSpan="2" Background="#1E90FF">
+            <TextBlock Text="© 2025 Brewlytics"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="White"
+                       FontSize="14"/>
+        </Border>
+
+        <ContentControl Grid.Row="1" Grid.Column="1" x:Name="MainContent"/>
+    </Grid>
+</Window>
