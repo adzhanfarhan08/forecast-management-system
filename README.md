@@ -12,3 +12,4 @@ We created this program with the aim of determining sales predictions and stock 
 - Programming Language : C#
 - UI Toolkit : WPF XAML
 - Database: PostgreSQL
+
