@@ -6,6 +6,7 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Table;
+use Filament\Tables\Columns\TextColumn;
 
 class RewardsTable
 {
@@ -13,8 +14,19 @@ class RewardsTable
     {
         return $table
             ->columns([
-                //
+                TextColumn::make('name') // Product Name in the list
+                    ->searchable()
+                    ->sortable(),
+
+                TextColumn::make('description') // Product Price in the list
+                    ->searchable()
+                    ->sortable(),
+
+                TextColumn::make('review_date') // Product Stock in the list
+                    ->searchable()
+                    ->sortable(),
             ])
+
             ->filters([
                 //
             ])
