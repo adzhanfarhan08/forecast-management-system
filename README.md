@@ -1,5 +1,23 @@
 # Documentation
 
+## User Documentation
+
+### Feature
+
+#### Management
+
+    - Dashboard
+    - Product Management
+    - Record Transaction
+    - Sales Management
+    - Review Management
+
+#### Security
+
+    - Login Page
+    - Editing Profile
+    - Activity Logs
+
 ## Developer Documentation
 
 ### Tech-Stack
