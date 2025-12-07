@@ -15,40 +15,34 @@ class DummyUserSeeder extends Seeder
      */
     public function run(): void
     {
-        // Buat roles
-        $adminRole = Role::firstOrCreate(['name' => 'admin']);
-        $ownerRole = Role::firstOrCreate(['name' => 'owner']);
-        $employeeRole = Role::firstOrCreate(['name' => 'employee']);
-
         // Dummy Admin
-        $admin = User::firstOrCreate(
-            ['email' => 'admin@example.com'],
+        $user = User::create(
             [
                 'name' => 'Admin Dummy',
+                'email' => 'admin@example.com',
                 'password' => Hash::make('123'),
             ]
         );
-        $admin->assignRole($adminRole);
+        $user->assignRole('admin'); // assign role
 
         // Dummy Owner
-        $owner = User::firstOrCreate(
-            ['email' => 'owner@example.com'],
+        $user = User::create(
             [
                 'name' => 'Owner Dummy',
-                'password' => Hash::make('123'),
+                'email' => 'owner@example.com',
                 'password' => Hash::make('123'),
             ]
         );
-        $owner->assignRole($ownerRole);
+        $user->assignRole('owner'); // assign role
 
         // Dummy Employee
-        $employee = User::firstOrCreate(
-            ['email' => 'employee@example.com'],
+        $user = User::create(
             [
                 'name' => 'Employee Dummy',
+                'email' => 'employee@example.com',
                 'password' => Hash::make('123'),
             ]
         );
-        $employee->assignRole($employeeRole);
+        $user->assignRole('employee'); // assign role
     }
 }
