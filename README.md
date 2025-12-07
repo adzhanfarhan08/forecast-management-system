@@ -6,7 +6,7 @@
 
 #### Management
 
-- Dashboard
+- Dashboard (Stats widget to record sales total and review)
 - Product Management
 - Record Transaction
 - Sales Management
