@@ -18,7 +18,6 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use Filament\SpatieLaravelActivitylogPlugin\SpatieLaravelActivitylogPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -28,9 +27,10 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('dashboard')
-            ->brandName("Brewlytics")
+            ->brandName('Brewlytics')
             // Using default Breeze auth
             // ->login()
+            ->profile()
             ->colors([
                 'primary' => Color::Amber,
             ])

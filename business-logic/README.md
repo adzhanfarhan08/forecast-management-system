@@ -2,6 +2,8 @@
 
 ## User Documentation
 
+This project make it for efficient operational management and give it advice to decision making about stock required and best product
+
 ### Feature
 
 #### Management
@@ -20,6 +22,8 @@
 
 ## Developer Documentation
 
+To developer this project make it some technology like this
+
 ### Tech-Stack
 
 This program is build with:
@@ -35,33 +39,44 @@ Just running this syntax if you using VScode you can Right Click and Run. This f
 
 #### Step 1
 
-This script funtional to installing all dependency required
+This script functional to installing all dependency required
 
-install-dependency.bat
+> install-dependency.bat
 
 #### Step 2
 
-This script funtional to freshing your database and add seeder in your database
+This script functional to freshing your database and add seeder in your database
 
-new-migration.bat
+> new-migration.bat
+
+### Step 3
+
+```Running Vite
+npm run dev
+```
+
+### Step 4
+
+```Running PHP
+php artisan serve
+```
 
 #### Optional
 
-This script funtional to adding seeder in your database
+This script functional to adding seeder in your database
 
-add-seeder.bat
+> add-seeder.bat
 
 #### Tips
 
 If you want to create new resource just follow this syntax or read Filament documentation
-
-Create Resource
+> Create Resource
 
 ```Create Resource
 php artisan make:filament-resource {Name Model}
 ```
 
-Create model
+> Create model
 
 ```Create model
 php artisan make:model {Name Model} -m

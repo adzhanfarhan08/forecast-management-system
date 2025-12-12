@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources\Products\Schemas;
 
-use Filament\Schemas\Schema;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Schema;
 
 class ProductForm
 {
