@@ -17,7 +17,7 @@ use UnitEnum;
 
 class ForecastResource extends Resource
 {
-    protected static ?string $model = Forecast::class;
+    protected static ?string $model = \App\Models\ForecastReport::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
