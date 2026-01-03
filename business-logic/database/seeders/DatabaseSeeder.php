@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             DummyUserSeeder::class,
             ProductSeeder::class,
+            ProductWithHistorySeeder::class,
             SaleSeeder::class,
             SalesItemsSeeder::class,
         ]);
